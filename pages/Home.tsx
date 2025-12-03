@@ -8,8 +8,34 @@ export const Home: React.FC = () => {
     window.scrollTo(0, 0);
   }, []);
 
+  const schemaData = {
+    "@context": "https://schema.org",
+    "@type": "RealEstateAgent",
+    "name": "Bollaar Properties",
+    "image": "https://i.postimg.cc/rpwdvKJy/sales-partner.jpg",
+    "description": "Hyderabad's Most Trusted Real Estate Advisory & Prestige City Authorized Partner. Guiding families to their dream homes.",
+    "url": "https://bollaarproperties.com",
+    "telephone": "+919347334431",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Hyderabad",
+      "addressRegion": "Telangana",
+      "addressCountry": "IN"
+    },
+    "priceRange": "₹₹₹",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "820",
+      "bestRating": "5",
+      "worstRating": "1"
+    }
+  };
+
   return (
     <div className="flex flex-col min-h-screen">
+      {/* SEO Schema Injection */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }} />
       
       {/* Hero Section */}
       <section className="relative bg-brand-900 text-white pt-24 pb-32 overflow-hidden">
@@ -19,6 +45,9 @@ export const Home: React.FC = () => {
                 src="https://images.pexels.com/photos/7563818/pexels-photo-7563818.jpeg" 
                 alt="Luxury Real Estate Background" 
                 className="w-full h-full object-cover"
+                loading="eager"
+                // @ts-ignore
+                fetchPriority="high"
             />
         </div>
         
@@ -75,6 +104,7 @@ export const Home: React.FC = () => {
                         alt="The Prestige City Hyderabad" 
                         className="absolute inset-0 w-full h-full object-cover"
                         referrerPolicy="no-referrer"
+                        loading="eager"
                     />
                     <div className="absolute top-4 left-4 bg-gold-600 text-white px-4 py-1 text-sm font-bold rounded shadow-lg uppercase tracking-wide">
                         Hot Launch
@@ -109,6 +139,124 @@ export const Home: React.FC = () => {
                     </div>
                 </div>
             </div>
+        </div>
+      </section>
+
+      {/* Upcoming Projects Section - NEW */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+                <h2 className="text-2xl font-serif font-bold text-brand-900 mb-2">Upcoming Premium Launches</h2>
+                <p className="text-gray-500 text-sm">Be the first to know about Hyderabad's next big landmarks. Pre-register for early-bird offers.</p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    {/* Card 1 */}
+                    <div className="bg-white rounded-xl shadow-md overflow-hidden group hover:shadow-xl transition duration-300">
+                    <div className="h-48 bg-gray-200 relative overflow-hidden">
+                        <img src="https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg" alt="Luxury High Rise" className="w-full h-full object-cover group-hover:scale-110 transition duration-700 grayscale group-hover:grayscale-0"/>
+                        <div className="absolute inset-0 bg-black/40 flex items-center justify-center group-hover:bg-black/20 transition">
+                            <span className="bg-gold-600 text-white text-[10px] font-bold px-3 py-1 rounded uppercase tracking-wider">Coming Soon</span>
+                        </div>
+                    </div>
+                    <div className="p-6">
+                        <h3 className="font-bold text-brand-900 mb-1 text-lg">Luxury High-Rise</h3>
+                        <p className="text-xs text-gold-600 font-bold uppercase mb-2">Kokapet, Hyderabad</p>
+                        <p className="text-xs text-gray-500 mb-4 line-clamp-2">Premium 3 & 4 BHK apartments in the heart of the Financial District extension. Unmatched skyline views.</p>
+                        <button className="text-brand-900 text-xs font-bold underline decoration-gold-500 underline-offset-4 hover:text-gold-600">Enquire Now</button>
+                    </div>
+                    </div>
+                    {/* Card 2 */}
+                    <div className="bg-white rounded-xl shadow-md overflow-hidden group hover:shadow-xl transition duration-300">
+                    <div className="h-48 bg-gray-200 relative overflow-hidden">
+                        <img src="https://images.pexels.com/photos/1475938/pexels-photo-1475938.jpeg" alt="Sky Villas" className="w-full h-full object-cover group-hover:scale-110 transition duration-700 grayscale group-hover:grayscale-0"/>
+                        <div className="absolute inset-0 bg-black/40 flex items-center justify-center group-hover:bg-black/20 transition">
+                            <span className="bg-gold-600 text-white text-[10px] font-bold px-3 py-1 rounded uppercase tracking-wider">Coming Soon</span>
+                        </div>
+                    </div>
+                    <div className="p-6">
+                        <h3 className="font-bold text-brand-900 mb-1 text-lg">Sky Villas</h3>
+                        <p className="text-xs text-gold-600 font-bold uppercase mb-2">Gachibowli, Hyderabad</p>
+                        <p className="text-xs text-gray-500 mb-4 line-clamp-2">Ultra-luxury duplex sky villas with private pools and decks. Experience resort living in the city.</p>
+                        <button className="text-brand-900 text-xs font-bold underline decoration-gold-500 underline-offset-4 hover:text-gold-600">Enquire Now</button>
+                    </div>
+                    </div>
+                    {/* Card 3 */}
+                    <div className="bg-white rounded-xl shadow-md overflow-hidden group hover:shadow-xl transition duration-300">
+                    <div className="h-48 bg-gray-200 relative overflow-hidden">
+                        <img src="https://images.pexels.com/photos/259588/pexels-photo-259588.jpeg" alt="Lakefront Township" className="w-full h-full object-cover group-hover:scale-110 transition duration-700 grayscale group-hover:grayscale-0"/>
+                        <div className="absolute inset-0 bg-black/40 flex items-center justify-center group-hover:bg-black/20 transition">
+                            <span className="bg-gold-600 text-white text-[10px] font-bold px-3 py-1 rounded uppercase tracking-wider">Coming Soon</span>
+                        </div>
+                    </div>
+                    <div className="p-6">
+                        <h3 className="font-bold text-brand-900 mb-1 text-lg">Lakefront Township</h3>
+                        <p className="text-xs text-gold-600 font-bold uppercase mb-2">Osman Sagar, Hyderabad</p>
+                        <p className="text-xs text-gray-500 mb-4 line-clamp-2">Resort-style living with serene lake views and lush greenery. 50+ acres of open space.</p>
+                        <button className="text-brand-900 text-xs font-bold underline decoration-gold-500 underline-offset-4 hover:text-gold-600">Enquire Now</button>
+                    </div>
+                    </div>
+            </div>
+        </div>
+      </section>
+
+      {/* Safe Investment / Process Section - NEW */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+                    <h2 className="text-2xl font-serif font-bold text-brand-900 mb-4">Your Guide to a Safe Property Investment</h2>
+                    <p className="max-w-2xl mx-auto text-gray-600 text-sm">Buying a home is one of the biggest financial decisions. At Bollaar Properties, we ensure your investment is secure, legal, and profitable.</p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-6 text-center">
+                <div className="p-6 border border-gray-100 rounded-xl hover:shadow-lg transition group">
+                    <div className="w-14 h-14 bg-green-50 text-green-600 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition">
+                        <DocIcon className="w-7 h-7"/>
+                    </div>
+                    <h3 className="font-bold text-brand-900 mb-2">100% RERA Approved</h3>
+                    <p className="text-xs text-gray-500 leading-relaxed">We only deal with projects that have valid RERA numbers and clear legal titles. Zero risk.</p>
+                </div>
+                <div className="p-6 border border-gray-100 rounded-xl hover:shadow-lg transition group">
+                        <div className="w-14 h-14 bg-blue-50 text-blue-600 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition">
+                        <ChartIcon className="w-7 h-7"/>
+                    </div>
+                    <h3 className="font-bold text-brand-900 mb-2">High Appreciation</h3>
+                    <p className="text-xs text-gray-500 leading-relaxed">Our market analysis ensures you buy in high-growth corridors like Budvel & Kokapet for max ROI.</p>
+                </div>
+                    <div className="p-6 border border-gray-100 rounded-xl hover:shadow-lg transition group">
+                        <div className="w-14 h-14 bg-gold-50 text-gold-600 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition">
+                        <UsersIcon className="w-7 h-7"/>
+                    </div>
+                    <h3 className="font-bold text-brand-900 mb-2">Authorized Partner</h3>
+                    <p className="text-xs text-gray-500 leading-relaxed">Direct representation of Grade-A developers like Prestige Group. No middleman bias or extra cost.</p>
+                </div>
+                    <div className="p-6 border border-gray-100 rounded-xl hover:shadow-lg transition group">
+                        <div className="w-14 h-14 bg-purple-50 text-purple-600 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition">
+                        <CheckIcon className="w-7 h-7"/>
+                    </div>
+                    <h3 className="font-bold text-brand-900 mb-2">Transparency</h3>
+                    <p className="text-xs text-gray-500 leading-relaxed">Complete clarity on carpet areas, loading factors, payment plans, and hidden charges.</p>
+                </div>
+            </div>
+        </div>
+      </section>
+
+      {/* Market Insights - SEO Content */}
+      <section className="py-16 bg-brand-900 text-white relative overflow-hidden">
+        <div className="absolute top-0 right-0 w-64 h-64 bg-gold-500/10 rounded-full blur-3xl -mr-16 -mt-16"></div>
+        <div className="absolute bottom-0 left-0 w-64 h-64 bg-blue-500/10 rounded-full blur-3xl -ml-16 -mb-16"></div>
+        
+        <div className="max-w-4xl mx-auto px-4 relative z-10 text-center">
+            <h2 className="text-2xl font-serif font-bold mb-6">Hyderabad Real Estate: A Booming Market</h2>
+            <div className="w-24 h-1 bg-gold-500 mx-auto rounded mb-8"></div>
+            <p className="text-gray-300 text-sm leading-relaxed mb-6">
+                Hyderabad has emerged as one of India's most resilient and fastest-growing real estate markets. With the expansion of the Metro Rail, the upcoming Airport Metro Express, and the rapid development of the Outer Ring Road (ORR) growth corridor, areas like <strong>Rajendranagar, Budvel, Kokapet, and Tellapur</strong> are witnessing exponential appreciation.
+            </p>
+            <p className="text-gray-300 text-sm leading-relaxed mb-8">
+                Investing in gated communities by reputed builders like Prestige Group ensures not just a luxury lifestyle but also a secure asset for generations. Bollaar Properties helps you navigate this dynamic market with expert advice and data-driven insights.
+            </p>
+            <a href="tel:+919347334431" className="inline-block border border-gold-500 text-gold-500 hover:bg-gold-500 hover:text-white px-6 py-2 rounded transition text-sm font-bold uppercase tracking-wider">
+                Talk to an Investment Expert
+            </a>
         </div>
       </section>
 

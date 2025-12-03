@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { LeadForm } from '../components/LeadForm';
-import { CheckIcon, LocationIcon, PhoneIcon, WhatsAppIcon, DocIcon, CloseIcon } from '../components/Icons';
+import { CheckIcon, LocationIcon, PhoneIcon, WhatsAppIcon, DocIcon, CloseIcon, ChartIcon, BuildingIcon } from '../components/Icons';
 import { PriceRow } from '../types';
 
 export const PrestigeCity: React.FC = () => {
@@ -10,6 +10,13 @@ export const PrestigeCity: React.FC = () => {
   useEffect(() => {
     document.title = "The Prestige City Hyderabad - Budvel | Luxury 3 & 4 BHK Apartments";
     window.scrollTo(0, 0);
+
+    // Auto-trigger Lead Form Popup after 10 seconds
+    const timer = setTimeout(() => {
+        setShowModal(true);
+    }, 10000);
+
+    return () => clearTimeout(timer);
   }, []);
 
   const prices: PriceRow[] = [
@@ -35,15 +42,15 @@ export const PrestigeCity: React.FC = () => {
     "https://preossdev.s3.ap-south-1.amazonaws.com/projectgallery/e2331e3d-0789-49da-9041-191dd98279e2.webp"
   ];
 
-  const heroImage = "https://i.postimg.cc/VdMQZNPc/img10201.jpg";
+  const heroImage = "https://i.postimg.cc/ZKsbR9f0/img10201.jpg";
   const topViewImage = "https://i.postimg.cc/vc9F2mFJ/img4576.jpg";
   const locationImage = "https://i.postimg.cc/mgGshQYh/cty_page_0007.jpg";
   const partnerBadge = "https://i.postimg.cc/rpwdvKJy/sales-partner.jpg";
 
   const layoutImages = [
-    { src: "https://i.postimg.cc/gnJFdKhy/cty-page-0045.jpg", title: "Tower Type A & B" },
-    { src: "https://i.postimg.cc/MMm2ZPtQ/cty-page-0028.jpg", title: "Tower Type C & D" },
-    { src: "https://i.postimg.cc/3dcMwDjS/cty-page-0047.jpg", title: "Tower Type E & F" },
+    { src: "https://i.postimg.cc/8Pd1RKPY/cty_page_0045.jpg", title: "Tower Type A & B" },
+    { src: "https://i.postimg.cc/k4kncLbf/cty_page_0028.jpg", title: "Tower Type C & D" },
+    { src: "https://i.postimg.cc/RZMvX7WB/cty_page_0047.jpg", title: "Tower Type E & F" },
   ];
 
   // SEO Schema
@@ -115,7 +122,7 @@ export const PrestigeCity: React.FC = () => {
             >
                 <CloseIcon className="w-8 h-8" />
             </button>
-            <LeadForm title="Download Master Plan" subtitle="Fill details to unlock full layout PDF" />
+            <LeadForm title="Enquire Now" subtitle="Don't Miss Out! Prices Increasing Soon." />
           </div>
         </div>
       )}
@@ -127,13 +134,16 @@ export const PrestigeCity: React.FC = () => {
             alt="The Prestige City Budvel Entrance View" 
             className="absolute inset-0 w-full h-full object-cover object-bottom"
             referrerPolicy="no-referrer"
+            loading="eager"
+            // @ts-ignore
+            fetchPriority="high"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-black/90 to-black/40"></div>
         
         <div className="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-10">
-            <div className="text-white md:w-1/2 animate-fade-in-up mt-10 md:mt-0">
+            <div className="text-white md:w-1/2 mt-10 md:mt-0">
                 {/* Authorized Partner Badge */}
-                <div className={`p-[2px] ${goldGradient} rounded-lg inline-block mb-6 shadow-xl`}>
+                <div className={`p-[2px] ${goldGradient} rounded-lg inline-block mb-6 shadow-xl animate-fade-in-up`}>
                     <img 
                         src={partnerBadge} 
                         alt="Authorized Sales Partner - Prestige City" 
@@ -142,23 +152,36 @@ export const PrestigeCity: React.FC = () => {
                     />
                 </div>
 
-                <div className="block">
+                <div className="block animate-fade-in-up" style={{ animationDelay: '100ms' }}>
                     <span className={`${goldGradient} text-white px-3 py-1 text-sm font-bold uppercase tracking-wider rounded mb-4 inline-block shadow-lg border border-gold-400/50`}>
                         New Launch in Rajendranagar
                     </span>
                 </div>
                 
-                <h1 className="text-2xl md:text-4xl font-serif font-bold leading-tight mb-4 drop-shadow-lg">
+                <h1 className="text-2xl md:text-4xl font-serif font-bold leading-tight mb-4 drop-shadow-lg animate-fade-in-up" style={{ animationDelay: '200ms' }}>
                     The Prestige City <br/> Hyderabad
                 </h1>
-                <p className="text-sm md:text-xl text-gray-200 mb-6 font-light">
+                <p className="text-sm md:text-xl text-gray-200 mb-6 font-light animate-fade-in-up" style={{ animationDelay: '300ms' }}>
                     Premium Gated Community in Budvel
                 </p>
-                <div className="space-y-3 mb-8 bg-black/40 p-5 rounded-lg backdrop-blur-md border-l-4 border-gold-500 inline-block w-full md:w-auto">
-                    <p className="flex items-center text-sm md:text-base"><CheckIcon className="w-5 h-5 text-gold-500 mr-2" /> Premium 3, 3.5 & 4 BHK</p>
-                    <p className="flex items-center text-sm md:text-base"><CheckIcon className="w-5 h-5 text-gold-500 mr-2" /> Starting from ₹ 1.50 Cr*</p>
+                
+                {/* Highlights with smooth animation */}
+                <div className="space-y-3 mb-8 bg-black/40 p-5 rounded-lg backdrop-blur-md border-l-4 border-gold-500 inline-block w-full md:w-auto animate-fade-in-up" style={{ animationDelay: '400ms' }}>
+                    <p className="flex items-center text-sm md:text-base">
+                        <CheckIcon className="w-5 h-5 text-gold-500 mr-2 flex-shrink-0" /> Premium 3, 3.5 & 4 BHK
+                    </p>
+                    <p className="flex items-center text-sm md:text-base">
+                        <CheckIcon className="w-5 h-5 text-gold-500 mr-2 flex-shrink-0" /> Starting from ₹ 1.50 Cr*
+                    </p>
+                    <p className="flex items-center text-sm md:text-base">
+                        <BuildingIcon className="w-5 h-5 text-gold-500 mr-2 flex-shrink-0" /> India’s No.1 Listed Developer
+                    </p>
+                    <p className="flex items-center text-sm md:text-base">
+                        <ChartIcon className="w-5 h-5 text-gold-500 mr-2 flex-shrink-0" /> Fastest Selling Project in Budvel
+                    </p>
                 </div>
-                <div className="flex flex-col sm:flex-row gap-4">
+
+                <div className="flex flex-col sm:flex-row gap-4 animate-fade-in-up" style={{ animationDelay: '500ms' }}>
                     <a href="tel:+919347334431" className="bg-white text-brand-900 px-8 py-3.5 rounded-lg font-bold hover:bg-gray-100 transition shadow-lg text-center transform hover:-translate-y-1 text-sm">
                         Call Now
                     </a>
@@ -167,7 +190,7 @@ export const PrestigeCity: React.FC = () => {
                     </a>
                 </div>
             </div>
-            <div className="w-full md:w-[400px] z-10">
+            <div className="w-full md:w-[400px] z-10 animate-fade-in-up" style={{ animationDelay: '600ms' }}>
                 <LeadForm title="Download Brochure" subtitle="Register for Exclusive Launch Offers" />
             </div>
         </div>
@@ -268,10 +291,9 @@ export const PrestigeCity: React.FC = () => {
                              <img 
                                 src={layout.src} 
                                 alt={layout.title} 
-                                className="w-full h-full object-contain p-2 transform transition duration-500 group-hover:scale-105"
+                                className="w-full h-full object-contain p-2"
                                 referrerPolicy="no-referrer"
                             />
-                            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition duration-300"></div>
                              <div className="absolute bottom-0 left-0 right-0 bg-brand-900/90 py-2">
                                 <span className="text-white text-xs font-bold uppercase tracking-wider">{layout.title}</span>
                             </div>
@@ -390,7 +412,8 @@ export const PrestigeCity: React.FC = () => {
                             <img 
                                 src={img} 
                                 alt={`Prestige City Gallery ${idx + 1}`} 
-                                className="w-full h-full object-cover transform transition duration-700 group-hover:scale-110" 
+                                className="w-full h-full object-cover transform transition duration-700 group-hover:scale-105" 
+                                referrerPolicy="no-referrer"
                             />
                             <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-4">
                                 <span className="text-white text-sm font-bold tracking-wide">View Image</span>
