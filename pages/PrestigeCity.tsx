@@ -35,7 +35,8 @@ export const PrestigeCity: React.FC = () => {
   ];
 
   const masterPlanImage = "https://preossdev.s3.ap-south-1.amazonaws.com/projectLayout/ff7c23c7-975e-4e41-93f2-2faf851494be.webp";
-  const partnerBadge = "https://freeimage.host/i/fzVe3S1";
+  // Updated with correct image URL
+  const partnerBadge = "https://i.postimg.cc/rpwdvKJy/sales-partner.jpg";
 
   // SEO Schema
   const schemaData = {

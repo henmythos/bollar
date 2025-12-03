@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 export const Footer: React.FC = () => {
   return (
@@ -20,7 +19,7 @@ export const Footer: React.FC = () => {
             {/* Sales Partner Badge */}
             <div className="p-[2px] bg-gradient-to-r from-gold-600 via-[#E5C565] to-gold-600 rounded-lg inline-block shadow-lg">
                 <img 
-                    src="https://freeimage.host/i/fzVe3S1" 
+                    src="https://i.postimg.cc/rpwdvKJy/sales-partner.jpg" 
                     alt="Authorized Sales Partner" 
                     className="h-10 w-auto block rounded-md bg-white"
                 />
@@ -31,9 +30,9 @@ export const Footer: React.FC = () => {
           <div>
             <h4 className="text-white font-bold mb-4 uppercase tracking-wider text-sm">Quick Links</h4>
             <ul className="space-y-2 text-sm">
-              <li><Link to="/" className="hover:text-gold-500 transition">Home Page</Link></li>
-              <li><Link to="/prestigecity" className="hover:text-gold-500 transition">The Prestige City Hyderabad</Link></li>
-              <li><Link to="/prestigecity#pricing" className="hover:text-gold-500 transition">Price List</Link></li>
+              <li><a href="#/" className="hover:text-gold-500 transition">Home Page</a></li>
+              <li><a href="#/prestigecity" className="hover:text-gold-500 transition">The Prestige City Hyderabad</a></li>
+              <li><a href="#/prestigecity#pricing" className="hover:text-gold-500 transition">Price List</a></li>
               <li><a href="#contact" className="hover:text-gold-500 transition">Contact Us</a></li>
             </ul>
           </div>

@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import { LeadForm } from '../components/LeadForm';
 import { CheckIcon, BuildingIcon, UsersIcon, ChartIcon, PhoneIcon, WhatsAppIcon, DocIcon } from '../components/Icons';
 
@@ -100,9 +99,9 @@ export const Home: React.FC = () => {
                     </ul>
 
                     <div className="flex flex-col sm:flex-row gap-4">
-                        <Link to="/prestigecity" className="inline-flex justify-center items-center px-6 py-3.5 border border-transparent text-base font-bold rounded-lg text-white bg-brand-900 hover:bg-brand-800 transition shadow-lg">
+                        <a href="#/prestigecity" className="inline-flex justify-center items-center px-6 py-3.5 border border-transparent text-base font-bold rounded-lg text-white bg-brand-900 hover:bg-brand-800 transition shadow-lg">
                             View Project Details
-                        </Link>
+                        </a>
                         <a href="https://wa.me/919347334431?text=Please%20send%20brochure%20for%20Prestige%20City" className="inline-flex justify-center items-center px-6 py-3.5 border border-gray-300 text-base font-bold rounded-lg text-brand-900 bg-white hover:bg-gray-50 transition shadow-sm">
                            <DocIcon className="w-4 h-4 mr-2" /> Download Brochure
                         </a>
