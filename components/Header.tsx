@@ -19,7 +19,7 @@ export const Header: React.FC = () => {
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <a href="#/" className="flex flex-col">
-            <span className="font-serif text-xl md:text-2xl font-bold text-brand-900 tracking-tight">
+            <span className="font-serif text-base md:text-xl font-bold text-brand-900 tracking-tight">
               BOLLAAR <span className="text-gold-600">PROPERTIES</span>
             </span>
             <span className="text-[10px] uppercase tracking-widest text-gray-500">
@@ -29,17 +29,17 @@ export const Header: React.FC = () => {
 
           {/* Desktop Nav */}
           <div className="hidden md:flex items-center space-x-8">
-            <a href="#/" className="text-gray-700 hover:text-gold-600 font-medium transition">Home</a>
-            <a href="#/prestigecity" className="text-gray-700 hover:text-gold-600 font-medium transition">
-              Prestige City <span className="text-xs bg-gold-500 text-white px-1.5 py-0.5 rounded ml-1">New</span>
+            <a href="#/" className="text-gray-700 hover:text-gold-600 font-medium transition text-sm">Home</a>
+            <a href="#/prestigecity" className="text-gray-700 hover:text-gold-600 font-medium transition text-sm">
+              Prestige City <span className="text-[10px] bg-gold-500 text-white px-1.5 py-0.5 rounded ml-1">New</span>
             </a>
-            <a href="#contact" className="text-gray-700 hover:text-gold-600 font-medium transition">Contact</a>
+            <a href="#contact" className="text-gray-700 hover:text-gold-600 font-medium transition text-sm">Contact</a>
             
             <a 
               href="tel:+919347334431" 
-              className="flex items-center gap-2 bg-brand-900 text-white px-5 py-2.5 rounded hover:bg-gold-600 transition duration-300 shadow-lg"
+              className="flex items-center gap-2 bg-brand-900 text-white px-4 py-2 rounded hover:bg-gold-600 transition duration-300 shadow-lg text-sm"
             >
-              <PhoneIcon className="w-4 h-4" />
+              <PhoneIcon className="w-3.5 h-3.5" />
               <span>+91 93473 34431</span>
             </a>
           </div>
@@ -61,20 +61,20 @@ export const Header: React.FC = () => {
             <a 
               href="#/" 
               onClick={() => setIsOpen(false)}
-              className="block px-3 py-3 text-base font-medium text-gray-700 hover:bg-gray-50 rounded"
+              className="block px-3 py-3 text-sm font-medium text-gray-700 hover:bg-gray-50 rounded"
             >
               Home
             </a>
             <a 
               href="#/prestigecity" 
               onClick={() => setIsOpen(false)}
-              className="block px-3 py-3 text-base font-medium text-gray-700 hover:bg-gray-50 rounded"
+              className="block px-3 py-3 text-sm font-medium text-gray-700 hover:bg-gray-50 rounded"
             >
               Prestige City Project
             </a>
             <a 
               href="tel:+919347334431"
-              className="block px-3 py-3 text-base font-bold text-gold-600 bg-gray-50 rounded mt-4"
+              className="block px-3 py-3 text-sm font-bold text-gold-600 bg-gray-50 rounded mt-4"
             >
               Call: +91 93473 34431
             </a>
