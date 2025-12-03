@@ -121,11 +121,11 @@ export const PrestigeCity: React.FC = () => {
       )}
 
       {/* Project Hero - Fixed mobile height overlap with min-h-screen */}
-      <section className="relative min-h-[650px] lg:h-[700px] flex items-center pt-10 pb-10">
+      <section className="relative min-h-[500px] lg:h-[700px] flex items-center pt-10 pb-10">
         <img 
             src={heroImage} 
             alt="The Prestige City Budvel Entrance View" 
-            className="absolute inset-0 w-full h-full object-cover"
+            className="absolute inset-0 w-full h-full object-cover object-bottom"
             referrerPolicy="no-referrer"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-black/90 to-black/40"></div>
@@ -148,21 +148,21 @@ export const PrestigeCity: React.FC = () => {
                     </span>
                 </div>
                 
-                <h1 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold leading-tight mb-4 drop-shadow-lg">
+                <h1 className="text-2xl md:text-4xl font-serif font-bold leading-tight mb-4 drop-shadow-lg">
                     The Prestige City <br/> Hyderabad
                 </h1>
-                <p className="text-lg md:text-xl text-gray-200 mb-6 font-light">
+                <p className="text-sm md:text-xl text-gray-200 mb-6 font-light">
                     Premium Gated Community in Budvel
                 </p>
                 <div className="space-y-3 mb-8 bg-black/40 p-5 rounded-lg backdrop-blur-md border-l-4 border-gold-500 inline-block w-full md:w-auto">
-                    <p className="flex items-center text-base md:text-lg"><CheckIcon className="w-5 h-5 text-gold-500 mr-2" /> Premium 3, 3.5 & 4 BHK</p>
-                    <p className="flex items-center text-base md:text-lg"><CheckIcon className="w-5 h-5 text-gold-500 mr-2" /> Starting from ₹ 1.50 Cr*</p>
+                    <p className="flex items-center text-sm md:text-base"><CheckIcon className="w-5 h-5 text-gold-500 mr-2" /> Premium 3, 3.5 & 4 BHK</p>
+                    <p className="flex items-center text-sm md:text-base"><CheckIcon className="w-5 h-5 text-gold-500 mr-2" /> Starting from ₹ 1.50 Cr*</p>
                 </div>
                 <div className="flex flex-col sm:flex-row gap-4">
-                    <a href="tel:+919347334431" className="bg-white text-brand-900 px-8 py-4 rounded-lg font-bold hover:bg-gray-100 transition shadow-lg text-center transform hover:-translate-y-1">
+                    <a href="tel:+919347334431" className="bg-white text-brand-900 px-8 py-3.5 rounded-lg font-bold hover:bg-gray-100 transition shadow-lg text-center transform hover:-translate-y-1 text-sm">
                         Call Now
                     </a>
-                    <a href="https://wa.me/919347334431?text=Interested%20in%20Prestige%20City" className={`${goldGradient} text-white px-8 py-4 rounded-lg font-bold hover:brightness-110 transition flex items-center justify-center shadow-lg transform hover:-translate-y-1 border border-white/20`}>
+                    <a href="https://wa.me/919347334431?text=Interested%20in%20Prestige%20City" className={`${goldGradient} text-white px-8 py-3.5 rounded-lg font-bold hover:brightness-110 transition flex items-center justify-center shadow-lg transform hover:-translate-y-1 border border-white/20 text-sm`}>
                         <WhatsAppIcon className="w-5 h-5 mr-2" /> WhatsApp
                     </a>
                 </div>
@@ -182,10 +182,10 @@ export const PrestigeCity: React.FC = () => {
                         Project Overview
                         <div className={`absolute bottom-0 left-0 w-1/2 h-1 ${goldGradient} rounded`}></div>
                     </h2>
-                    <p className="text-gray-600 mb-6 leading-relaxed text-base">
+                    <p className="text-gray-600 mb-6 leading-relaxed text-sm">
                         The Prestige City Hyderabad is a meticulously planned self-contained township located in the high-growth corridor of Budvel, Rajendranagar. Spanning over 31.14 acres, this architectural marvel by Prestige Group offers a lifestyle of unbridled luxury.
                     </p>
-                    <p className="text-gray-600 mb-8 leading-relaxed text-base">
+                    <p className="text-gray-600 mb-8 leading-relaxed text-sm">
                         With 13 towers rising 37 floors high, the project offers breathtaking views of the Mulagund Lake and the National Park. It connects you seamlessly to the Airport, Financial District, and IT Hubs.
                     </p>
                     
@@ -203,8 +203,8 @@ export const PrestigeCity: React.FC = () => {
                     </div>
 
                     <div className="bg-gray-50 p-6 rounded-lg border-l-4 border-gold-500">
-                        <h4 className="font-bold text-brand-900 mb-2">Project Status: New Launch</h4>
-                        <p className="text-sm text-gray-600">Don't miss the opportunity to book at inaugural prices.</p>
+                        <h4 className="font-bold text-brand-900 mb-2 text-sm">Project Status: New Launch</h4>
+                        <p className="text-xs text-gray-600">Don't miss the opportunity to book at inaugural prices.</p>
                     </div>
                 </div>
                 <div className="bg-brand-900 text-white p-8 rounded-2xl shadow-2xl relative overflow-hidden transform hover:scale-[1.01] transition duration-300">
@@ -221,7 +221,7 @@ export const PrestigeCity: React.FC = () => {
                     <div className="mt-8 pt-8 border-t border-gray-700">
                         <button 
                             onClick={() => setShowModal(true)}
-                            className={`w-full ${goldGradient} hover:brightness-110 text-white font-bold py-3.5 rounded-lg flex items-center justify-center transition shadow-lg border border-white/10`}
+                            className={`w-full ${goldGradient} hover:brightness-110 text-white font-bold py-3.5 rounded-lg flex items-center justify-center transition shadow-lg border border-white/10 text-sm`}
                         >
                             <DocIcon className="w-4 h-4 mr-2" /> Download Project Brochure
                         </button>
@@ -264,14 +264,14 @@ export const PrestigeCity: React.FC = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
                 {layoutImages.map((layout, idx) => (
                     <div key={idx} className="group cursor-pointer">
-                        <div className="relative overflow-hidden rounded-xl shadow-lg border border-gray-200 aspect-[4/3] bg-gray-100">
+                        <div className="relative overflow-hidden rounded-xl shadow-lg border border-gray-200 aspect-[4/3] bg-white">
                              <img 
                                 src={layout.src} 
                                 alt={layout.title} 
-                                className="w-full h-full object-cover transform transition duration-500 group-hover:scale-110"
+                                className="w-full h-full object-contain p-2 transform transition duration-500 group-hover:scale-105"
                                 referrerPolicy="no-referrer"
                             />
-                            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition duration-300"></div>
+                            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition duration-300"></div>
                              <div className="absolute bottom-0 left-0 right-0 bg-brand-900/90 py-2">
                                 <span className="text-white text-xs font-bold uppercase tracking-wider">{layout.title}</span>
                             </div>
@@ -282,7 +282,7 @@ export const PrestigeCity: React.FC = () => {
 
             <button 
                 onClick={() => setShowModal(true)}
-                className="inline-flex items-center bg-brand-900 text-white px-8 py-3.5 rounded-lg font-bold hover:bg-brand-800 transition shadow-lg transform hover:-translate-y-1"
+                className="inline-flex items-center bg-brand-900 text-white px-8 py-3.5 rounded-lg font-bold hover:bg-brand-800 transition shadow-lg transform hover:-translate-y-1 text-sm"
             >
                 <DocIcon className="w-5 h-5 mr-2" /> Download Detailed Master Plan
             </button>
@@ -314,52 +314,61 @@ export const PrestigeCity: React.FC = () => {
         </div>
       </section>
 
-      {/* Price List */}
+      {/* Price List - Redesigned Card Layout */}
       <section className="py-20 bg-brand-900 text-white" id="pricing">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex flex-col md:flex-row justify-between items-end mb-12 border-b border-gray-700 pb-6">
-                <div>
-                    <h2 className="text-2xl md:text-3xl font-serif font-bold mb-2">Price & Configuration</h2>
-                    <p className="text-gray-400 text-sm">Exclusive Pre-Launch pricing for early birds.</p>
-                </div>
-                <div className="mt-4 md:mt-0">
-                    <a href="tel:+919347334431" className={`inline-flex items-center ${goldTextGradient} font-bold hover:brightness-110 transition text-sm`}>
-                        <PhoneIcon className="w-4 h-4 mr-2 text-gold-500" /> Talk to an Expert
-                    </a>
-                </div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+                <h2 className="text-2xl md:text-3xl font-serif font-bold mb-3">Price & Configuration</h2>
+                <p className="text-gray-400 text-sm">Exclusive Pre-Launch pricing. Swipe to view all options.</p>
+                <div className={`h-1 w-24 mx-auto ${goldGradient} mt-4 rounded-full`}></div>
             </div>
 
-            {/* Added overflow-x-auto to fix mobile layout issues */}
-            <div className="overflow-x-auto rounded-xl border border-gray-700 shadow-2xl bg-brand-800/50 backdrop-blur-sm">
-                <table className="min-w-[600px] w-full divide-y divide-gray-700">
-                    <thead className="bg-brand-800">
-                        <tr>
-                            <th scope="col" className="px-6 py-5 text-left text-xs font-bold text-gold-500 uppercase tracking-wider">Unit Type</th>
-                            <th scope="col" className="px-6 py-5 text-left text-xs font-bold text-gray-300 uppercase tracking-wider">Size (Sq.Ft)</th>
-                            <th scope="col" className="px-6 py-5 text-left text-xs font-bold text-white uppercase tracking-wider">Price Starts From</th>
-                            <th scope="col" className="px-6 py-5 text-right text-xs font-bold text-gray-300 uppercase tracking-wider">Action</th>
-                        </tr>
-                    </thead>
-                    <tbody className="divide-y divide-gray-800/50">
-                        {prices.map((row, idx) => (
-                            <tr key={idx} className="hover:bg-white/5 transition duration-150">
-                                <td className="px-6 py-6 whitespace-nowrap text-sm font-bold text-white">{row.unitType}</td>
-                                <td className="px-6 py-6 whitespace-nowrap text-sm text-gray-300">{row.size}</td>
-                                <td className="px-6 py-6 whitespace-nowrap text-sm font-bold text-gold-500">{row.price}</td>
-                                <td className="px-6 py-6 whitespace-nowrap text-right text-sm font-medium">
+            {/* Mobile Horizontal Snap Scroll / Desktop Grid */}
+            <div className="flex overflow-x-auto snap-x snap-mandatory gap-6 pb-8 md:grid md:grid-cols-3 md:gap-8 md:overflow-visible px-4 -mx-4 md:mx-0 scrollbar-hide">
+                {prices.map((row, idx) => (
+                    <div key={idx} className="snap-center shrink-0 w-[85%] md:w-auto relative group">
+                        {/* Gold Border Effect via Wrapper */}
+                        <div className={`p-[1px] rounded-2xl ${goldGradient} shadow-2xl h-full transform transition duration-300 md:group-hover:-translate-y-2`}>
+                            <div className="bg-brand-900 rounded-2xl p-6 h-full flex flex-col relative overflow-hidden">
+                                {/* Decorative Background Glow */}
+                                <div className="absolute top-0 right-0 w-32 h-32 bg-gold-500/10 rounded-full blur-3xl -mr-16 -mt-16"></div>
+                                
+                                <div className="mb-6">
+                                    <h3 className="text-3xl font-serif font-bold text-white mb-2">{row.unitType}</h3>
+                                    <div className="inline-block px-3 py-1 bg-white/10 rounded-full text-xs font-semibold tracking-wider text-gold-400 border border-white/10">
+                                        PREMIUM APARTMENT
+                                    </div>
+                                </div>
+
+                                <div className="space-y-6 flex-grow">
+                                    <div>
+                                        <p className="text-gray-400 text-xs uppercase tracking-widest mb-1">Super Built-up Area</p>
+                                        <p className="text-xl font-medium text-white">{row.size}</p>
+                                    </div>
+                                    
+                                    <div className="pt-6 border-t border-gray-800">
+                                        <p className="text-gray-400 text-xs uppercase tracking-widest mb-1">Starting Price</p>
+                                        <p className={`text-2xl md:text-3xl font-bold ${goldTextGradient}`}>
+                                            {row.price}
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div className="mt-8">
                                     <button 
                                         onClick={() => setShowModal(true)}
-                                        className={`inline-block bg-white text-brand-900 hover:${goldGradient} hover:text-white px-5 py-2.5 rounded-lg text-xs uppercase font-bold tracking-wide transition shadow-md`}
+                                        className={`w-full ${goldGradient} text-white font-bold py-4 rounded-xl shadow-lg hover:brightness-110 transition flex items-center justify-center text-sm`}
                                     >
-                                        Get Cost Sheet
+                                        <DocIcon className="w-4 h-4 mr-2" /> Request Cost Sheet
                                     </button>
-                                </td>
-                            </tr>
-                        ))}
-                    </tbody>
-                </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                ))}
             </div>
-            <p className="text-[10px] text-center text-gray-500 mt-6">*Prices are subject to change. Govt taxes extra. 1 Acre = 4046.86 sq.mt</p>
+            
+            <p className="text-[10px] text-center text-gray-500 mt-2">*Prices are subject to change. Govt taxes extra. 1 Acre = 4046.86 sq.mt</p>
         </div>
       </section>
 
@@ -392,7 +401,7 @@ export const PrestigeCity: React.FC = () => {
             </div>
             
             <div className="mt-12 text-center">
-                 <a href="https://wa.me/919347334431?text=Send%20More%20Photos" className="inline-flex items-center bg-brand-900 text-white px-8 py-3.5 rounded-lg hover:bg-brand-800 transition font-bold shadow-lg transform hover:-translate-y-1">
+                 <a href="https://wa.me/919347334431?text=Send%20More%20Photos" className="inline-flex items-center bg-brand-900 text-white px-8 py-3.5 rounded-lg hover:bg-brand-800 transition font-bold shadow-lg transform hover:-translate-y-1 text-sm">
                     <WhatsAppIcon className="w-4 h-4 mr-2" /> Request More Photos
                  </a>
             </div>
