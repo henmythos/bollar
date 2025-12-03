@@ -21,7 +21,8 @@ export const Footer: React.FC = () => {
                 <img 
                     src="https://i.postimg.cc/rpwdvKJy/sales-partner.jpg" 
                     alt="Authorized Sales Partner" 
-                    className="h-10 w-auto block rounded-md bg-white"
+                    className="h-12 w-auto block rounded-md bg-white object-contain"
+                    referrerPolicy="no-referrer"
                 />
             </div>
           </div>

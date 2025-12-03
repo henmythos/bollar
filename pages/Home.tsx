@@ -16,7 +16,7 @@ export const Home: React.FC = () => {
         {/* Abstract Background Image */}
         <div className="absolute inset-0 opacity-20">
             <img 
-                src="https://picsum.photos/seed/arch/1920/1080" 
+                src="https://images.pexels.com/photos/7563818/pexels-photo-7563818.jpeg" 
                 alt="Luxury Real Estate Background" 
                 className="w-full h-full object-cover"
             />

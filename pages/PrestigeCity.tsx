@@ -113,7 +113,8 @@ export const PrestigeCity: React.FC = () => {
                     <img 
                         src={partnerBadge} 
                         alt="Authorized Sales Partner - Prestige City" 
-                        className="h-10 md:h-12 w-auto block rounded-md bg-white"
+                        className="h-12 w-auto block rounded-md bg-white object-contain"
+                        referrerPolicy="no-referrer"
                     />
                 </div>
 
