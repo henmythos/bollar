@@ -37,7 +37,7 @@ export const PrestigeCity: React.FC = () => {
 
   const heroImage = "https://i.postimg.cc/VdMQZNPc/img10201.jpg";
   const topViewImage = "https://i.postimg.cc/vc9F2mFJ/img4576.jpg";
-  const locationImage = "https://i.postimg.cc/rKgbPRYL/cty-page-0007.jpg";
+  const locationImage = "https://i.postimg.cc/mgGshQYh/cty_page_0007.jpg";
   const partnerBadge = "https://i.postimg.cc/rpwdvKJy/sales-partner.jpg";
 
   const layoutImages = [
