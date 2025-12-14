@@ -33,8 +33,10 @@ export const Footer: React.FC = () => {
             <ul className="space-y-2 text-xs">
               <li><a href="#/" className="hover:text-gold-500 transition">Home Page</a></li>
               <li><a href="#/prestigecity" className="hover:text-gold-500 transition">The Prestige City Hyderabad</a></li>
+              <li><a href="#/godrej-rajendranagar" className="hover:text-gold-500 transition">Godrej Regal Pavilion (New)</a></li>
               <li><a href="#/prestigecity#pricing" className="hover:text-gold-500 transition">Price List</a></li>
               <li><a href="#contact" className="hover:text-gold-500 transition">Contact Us</a></li>
+              <li><a href="#/admin/login" className="text-gray-500 hover:text-gold-500 transition">Admin Login</a></li>
             </ul>
           </div>
 

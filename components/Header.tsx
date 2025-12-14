@@ -11,8 +11,6 @@ export const Header: React.FC = () => {
     return () => window.removeEventListener('hashchange', handleHashChange);
   }, []);
 
-  const isProjectPage = hash.includes('prestigecity');
-
   return (
     <header className="sticky top-0 z-40 w-full bg-white shadow-md border-b border-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -28,16 +26,19 @@ export const Header: React.FC = () => {
           </a>
 
           {/* Desktop Nav */}
-          <div className="hidden md:flex items-center space-x-8">
-            <a href="#/" className="text-gray-700 hover:text-gold-600 font-medium transition text-sm">Home</a>
-            <a href="#/prestigecity" className="text-gray-700 hover:text-gold-600 font-medium transition text-sm">
-              Prestige City <span className="text-[10px] bg-gold-500 text-white px-1.5 py-0.5 rounded ml-1">New</span>
+          <div className="hidden md:flex items-center space-x-6">
+            <a href="#/" className="text-gray-700 hover:text-gold-600 font-medium transition text-xs lg:text-sm">Home</a>
+            <a href="#/prestigecity" className="text-gray-700 hover:text-gold-600 font-medium transition text-xs lg:text-sm">
+              Prestige City
             </a>
-            <a href="#contact" className="text-gray-700 hover:text-gold-600 font-medium transition text-sm">Contact</a>
+            <a href="#/godrej-rajendranagar" className="text-gray-700 hover:text-gold-600 font-medium transition text-xs lg:text-sm">
+              Godrej Regal Pavilion <span className="text-[9px] bg-gold-500 text-white px-1 py-0.5 rounded ml-1 align-top">New</span>
+            </a>
+            <a href="#contact" className="text-gray-700 hover:text-gold-600 font-medium transition text-xs lg:text-sm">Contact</a>
             
             <a 
               href="tel:+919347334431" 
-              className="flex items-center gap-2 bg-brand-900 text-white px-4 py-2 rounded hover:bg-gold-600 transition duration-300 shadow-lg text-sm"
+              className="flex items-center gap-2 bg-brand-900 text-white px-4 py-2 rounded hover:bg-gold-600 transition duration-300 shadow-lg text-xs lg:text-sm"
             >
               <PhoneIcon className="w-3.5 h-3.5" />
               <span>+91 93473 34431</span>
@@ -70,7 +71,14 @@ export const Header: React.FC = () => {
               onClick={() => setIsOpen(false)}
               className="block px-3 py-3 text-sm font-medium text-gray-700 hover:bg-gray-50 rounded"
             >
-              Prestige City Project
+              The Prestige City Hyderabad
+            </a>
+             <a 
+              href="#/godrej-rajendranagar" 
+              onClick={() => setIsOpen(false)}
+              className="block px-3 py-3 text-sm font-medium text-gray-700 hover:bg-gray-50 rounded flex justify-between"
+            >
+              Godrej Regal Pavilion <span className="text-[10px] bg-gold-500 text-white px-1.5 py-0.5 rounded">New</span>
             </a>
             <a 
               href="tel:+919347334431"

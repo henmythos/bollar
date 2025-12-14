@@ -6,9 +6,10 @@ import { PriceRow } from '../types';
 export const PrestigeCity: React.FC = () => {
   const [isLocationExpanded, setIsLocationExpanded] = useState(false);
   const [showModal, setShowModal] = useState(false);
+  const PROJECT_NAME = "The Prestige City Hyderabad";
 
   useEffect(() => {
-    document.title = "The Prestige City Hyderabad - Budvel | Luxury 3 & 4 BHK Apartments";
+    document.title = "The Prestige City Hyderabad - Budvel | Luxury 2, 3 & 4 BHK Apartments";
     window.scrollTo(0, 0);
 
     // Auto-trigger Lead Form Popup after 10 seconds
@@ -20,6 +21,7 @@ export const PrestigeCity: React.FC = () => {
   }, []);
 
   const prices: PriceRow[] = [
+    { unitType: "2 BHK", size: "1179 - 1360 Sq.Ft.", price: "Call for Price" },
     { unitType: "3 BHK", size: "1534 - 2169 Sq.Ft.", price: "₹ 1.50 Cr* - 2.12 Cr*" },
     { unitType: "3.5 BHK", size: "2433 Sq.Ft.", price: "₹ 2.38 Cr*" },
     { unitType: "4 BHK", size: "3357 Sq.Ft.", price: "₹ 3.28 Cr*" },
@@ -60,7 +62,7 @@ export const PrestigeCity: React.FC = () => {
       {
         "@type": "ApartmentComplex",
         "name": "The Prestige City Hyderabad",
-        "description": "Luxury 3, 3.5 & 4 BHK apartments in Budvel, Rajendranagar. A 31.14-acre township by Prestige Group offering world-class amenities and lake views.",
+        "description": "Luxury 2, 3, 3.5 & 4 BHK apartments in Budvel, Rajendranagar. A 31.14-acre township by Prestige Group offering world-class amenities and lake views.",
         "image": "https://preossdev.s3.ap-south-1.amazonaws.com/projectgallery/12312fee-74b6-479d-8d27-f207bae04c97.webp",
         "address": {
           "@type": "PostalAddress",
@@ -122,7 +124,7 @@ export const PrestigeCity: React.FC = () => {
             >
                 <CloseIcon className="w-8 h-8" />
             </button>
-            <LeadForm title="Enquire Now" subtitle="Don't Miss Out! Prices Increasing Soon." />
+            <LeadForm title="Enquire Now" subtitle="Don't Miss Out! Prices Increasing Soon." project={PROJECT_NAME} />
           </div>
         </div>
       )}
@@ -168,7 +170,7 @@ export const PrestigeCity: React.FC = () => {
                 {/* Highlights with smooth animation */}
                 <div className="space-y-3 mb-8 bg-black/40 p-5 rounded-lg backdrop-blur-md border-l-4 border-gold-500 inline-block w-full md:w-auto animate-fade-in-up" style={{ animationDelay: '400ms' }}>
                     <p className="flex items-center text-sm md:text-base">
-                        <CheckIcon className="w-5 h-5 text-gold-500 mr-2 flex-shrink-0" /> Premium 3, 3.5 & 4 BHK
+                        <CheckIcon className="w-5 h-5 text-gold-500 mr-2 flex-shrink-0" /> Premium 2, 3, 3.5 & 4 BHK
                     </p>
                     <p className="flex items-center text-sm md:text-base">
                         <CheckIcon className="w-5 h-5 text-gold-500 mr-2 flex-shrink-0" /> Starting from ₹ 1.50 Cr*
@@ -191,7 +193,7 @@ export const PrestigeCity: React.FC = () => {
                 </div>
             </div>
             <div className="w-full md:w-[400px] z-10 animate-fade-in-up" style={{ animationDelay: '600ms' }}>
-                <LeadForm title="Download Brochure" subtitle="Register for Exclusive Launch Offers" />
+                <LeadForm title="Download Brochure" subtitle="Register for Exclusive Launch Offers" project={PROJECT_NAME} />
             </div>
         </div>
       </section>
@@ -346,7 +348,7 @@ export const PrestigeCity: React.FC = () => {
             </div>
 
             {/* Mobile Horizontal Snap Scroll / Desktop Grid */}
-            <div className="flex overflow-x-auto snap-x snap-mandatory gap-6 pb-8 md:grid md:grid-cols-3 md:gap-8 md:overflow-visible px-4 -mx-4 md:mx-0 scrollbar-hide">
+            <div className="flex overflow-x-auto snap-x snap-mandatory gap-6 pb-8 md:grid md:grid-cols-4 md:gap-6 md:overflow-visible px-4 -mx-4 md:mx-0 scrollbar-hide">
                 {prices.map((row, idx) => (
                     <div key={idx} className="snap-center shrink-0 w-[85%] md:w-auto relative group">
                         {/* Gold Border Effect via Wrapper */}

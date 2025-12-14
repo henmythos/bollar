@@ -5,8 +5,15 @@ import { StickyCTA } from './components/StickyCTA';
 import ScrollToTop from './components/ScrollToTop';
 import { Home } from './pages/Home';
 import { PrestigeCity } from './pages/PrestigeCity';
+import { GodrejRajendraNagar } from './pages/GodrejRajendraNagar';
 import { LeadForm } from './components/LeadForm';
 import { CloseIcon } from './components/Icons';
+// Admin Imports
+import { AdminLogin } from './pages/admin/Login';
+import { Dashboard } from './pages/admin/Dashboard';
+import { LeadsPage } from './pages/admin/Leads';
+import { ProjectsPage } from './pages/admin/Projects';
+import { isAuthenticated } from './lib/auth';
 
 function App() {
   const [hash, setHash] = useState(window.location.hash || '#/');
@@ -20,14 +27,37 @@ function App() {
     return () => window.removeEventListener('hashchange', handleHashChange);
   }, []);
 
-  // Simple routing logic
+  // --- Router Logic ---
+  const cleanPath = hash.replace(/^#/, '').split('?')[0].split('#')[0];
+  const isAdminRoute = cleanPath.startsWith('/admin');
+
+  // Admin Guard
+  if (isAdminRoute) {
+      if (cleanPath === '/admin/login') return <AdminLogin />;
+      
+      // Protected Routes
+      if (!isAuthenticated()) {
+          window.location.hash = '/admin/login';
+          return null;
+      }
+
+      if (cleanPath === '/admin/dashboard') return <Dashboard />;
+      if (cleanPath === '/admin/leads') return <LeadsPage />;
+      if (cleanPath === '/admin/projects') return <ProjectsPage />;
+      
+      return <Dashboard />; // Default to dashboard for unknown admin routes
+  }
+
+  // --- Public Routes ---
   let Component = Home;
-  
-  // Extract path from hash (e.g. #/prestigecity -> /prestigecity)
-  const path = hash.replace(/^#/, '').split('?')[0].split('#')[0];
-  
-  if (path === '/prestigecity') {
+  let currentProject = "General Enquiry";
+
+  if (cleanPath === '/prestigecity') {
     Component = PrestigeCity;
+    currentProject = "The Prestige City Hyderabad";
+  } else if (cleanPath === '/godrej-rajendranagar') {
+    Component = GodrejRajendraNagar;
+    currentProject = "Godrej Regal Pavilion";
   }
 
   return (
@@ -54,7 +84,7 @@ function App() {
             >
                 <CloseIcon className="w-8 h-8" />
             </button>
-            <LeadForm title="Enquire Now" subtitle="Get Instant Callback & Details" />
+            <LeadForm title="Enquire Now" subtitle="Get Instant Callback & Details" project={currentProject} />
           </div>
         </div>
       )}

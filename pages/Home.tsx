@@ -89,7 +89,7 @@ export const Home: React.FC = () => {
         </div>
       </section>
 
-      {/* Featured Project Section - High Priority */}
+      {/* Featured Project Section - Prestige */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
@@ -97,7 +97,7 @@ export const Home: React.FC = () => {
                 <div className="w-24 h-1 bg-gold-500 mx-auto rounded"></div>
             </div>
 
-            <div className="flex flex-col lg:flex-row bg-white rounded-2xl shadow-2xl overflow-hidden border border-gray-100">
+            <div className="flex flex-col lg:flex-row bg-white rounded-2xl shadow-2xl overflow-hidden border border-gray-100 mb-12">
                 <div className="lg:w-1/2 relative min-h-[400px]">
                      <img 
                         src="https://i.postimg.cc/WhrLY4cj/img10467.jpg" 
@@ -142,64 +142,94 @@ export const Home: React.FC = () => {
         </div>
       </section>
 
-      {/* Upcoming Projects Section - NEW */}
+      {/* New Launches & Projects - Godrej Added Here */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
-                <h2 className="text-2xl font-serif font-bold text-brand-900 mb-2">Upcoming Premium Launches</h2>
-                <p className="text-gray-500 text-sm">Be the first to know about Hyderabad's next big landmarks. Pre-register for early-bird offers.</p>
+                <h2 className="text-2xl font-serif font-bold text-brand-900 mb-2">New Launches & Trending Projects</h2>
+                <p className="text-gray-500 text-sm">Discover Hyderabad's latest premium developments. Pre-register for early-bird offers.</p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                    {/* Card 1 */}
-                    <div className="bg-white rounded-xl shadow-md overflow-hidden group hover:shadow-xl transition duration-300">
-                    <div className="h-48 bg-gray-200 relative overflow-hidden">
-                        <img src="https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg" alt="Luxury High Rise" className="w-full h-full object-cover group-hover:scale-110 transition duration-700 grayscale group-hover:grayscale-0"/>
-                        <div className="absolute inset-0 bg-black/40 flex items-center justify-center group-hover:bg-black/20 transition">
-                            <span className="bg-gold-600 text-white text-[10px] font-bold px-3 py-1 rounded uppercase tracking-wider">Coming Soon</span>
+                    {/* Card 1 - Godrej Regal Pavilion */}
+                    <div className="bg-white rounded-xl shadow-md overflow-hidden group hover:shadow-xl transition duration-300 border border-gray-100">
+                    <div className="h-56 bg-gray-200 relative overflow-hidden">
+                        <img 
+                            src="https://godrejregalpavilion.online/img/gallery/out5.png" 
+                            alt="Godrej Regal Pavilion" 
+                            className="w-full h-full object-cover group-hover:scale-110 transition duration-700"
+                            referrerPolicy="no-referrer"
+                        />
+                        <div className="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 bg-black/20">
+                            <a href="#/godrej-rajendranagar" className="bg-white text-brand-900 text-xs font-bold px-4 py-2 rounded-lg hover:bg-gold-500 hover:text-white transition">View Details</a>
+                        </div>
+                        <div className="absolute top-4 left-4">
+                            <span className="bg-gold-600 text-white text-[10px] font-bold px-3 py-1 rounded uppercase tracking-wider shadow-md">New Launch</span>
                         </div>
                     </div>
                     <div className="p-6">
-                        <h3 className="font-bold text-brand-900 mb-1 text-lg">Luxury High-Rise</h3>
-                        <p className="text-xs text-gold-600 font-bold uppercase mb-2">Kokapet, Hyderabad</p>
-                        <p className="text-xs text-gray-500 mb-4 line-clamp-2">Premium 3 & 4 BHK apartments in the heart of the Financial District extension. Unmatched skyline views.</p>
-                        <button className="text-brand-900 text-xs font-bold underline decoration-gold-500 underline-offset-4 hover:text-gold-600">Enquire Now</button>
+                        <h3 className="font-bold text-brand-900 mb-1 text-lg group-hover:text-gold-600 transition">Godrej Regal Pavilion</h3>
+                        <p className="text-xs text-gray-500 font-bold uppercase mb-3 flex items-center">
+                            <span className="w-1.5 h-1.5 bg-gold-500 rounded-full mr-2"></span>
+                            Rajendra Nagar, Hyderabad
+                        </p>
+                        <p className="text-xs text-gray-500 mb-4 line-clamp-2 leading-relaxed">
+                            Royal Nawaab Themed Township on 13 Acres. 2, 3 & 4 BHK Luxury Apartments starting from ₹ 1.10 Cr*.
+                        </p>
+                        <div className="flex items-center justify-between border-t border-gray-100 pt-4">
+                            <span className="text-brand-900 font-bold text-sm">₹ 1.10 Cr* Onwards</span>
+                            <a href="#/godrej-rajendranagar" className="text-gold-600 text-xs font-bold hover:underline">Know More →</a>
+                        </div>
                     </div>
                     </div>
-                    {/* Card 2 */}
+
+                    {/* Card 2 - Placeholder */}
                     <div className="bg-white rounded-xl shadow-md overflow-hidden group hover:shadow-xl transition duration-300">
-                    <div className="h-48 bg-gray-200 relative overflow-hidden">
+                    <div className="h-56 bg-gray-200 relative overflow-hidden">
                         <img src="https://images.pexels.com/photos/1475938/pexels-photo-1475938.jpeg" alt="Sky Villas" className="w-full h-full object-cover group-hover:scale-110 transition duration-700 grayscale group-hover:grayscale-0"/>
                         <div className="absolute inset-0 bg-black/40 flex items-center justify-center group-hover:bg-black/20 transition">
-                            <span className="bg-gold-600 text-white text-[10px] font-bold px-3 py-1 rounded uppercase tracking-wider">Coming Soon</span>
+                            <span className="bg-gray-800 text-white text-[10px] font-bold px-3 py-1 rounded uppercase tracking-wider">Coming Soon</span>
                         </div>
                     </div>
                     <div className="p-6">
                         <h3 className="font-bold text-brand-900 mb-1 text-lg">Sky Villas</h3>
-                        <p className="text-xs text-gold-600 font-bold uppercase mb-2">Gachibowli, Hyderabad</p>
-                        <p className="text-xs text-gray-500 mb-4 line-clamp-2">Ultra-luxury duplex sky villas with private pools and decks. Experience resort living in the city.</p>
-                        <button className="text-brand-900 text-xs font-bold underline decoration-gold-500 underline-offset-4 hover:text-gold-600">Enquire Now</button>
+                        <p className="text-xs text-gray-500 font-bold uppercase mb-3 flex items-center">
+                            <span className="w-1.5 h-1.5 bg-gray-400 rounded-full mr-2"></span>
+                            Gachibowli, Hyderabad
+                        </p>
+                        <p className="text-xs text-gray-500 mb-4 line-clamp-2 leading-relaxed">Ultra-luxury duplex sky villas with private pools and decks. Experience resort living in the city.</p>
+                        <div className="flex items-center justify-between border-t border-gray-100 pt-4">
+                             <span className="text-gray-400 font-bold text-sm">Price on Request</span>
+                            <button className="text-brand-900 text-xs font-bold hover:text-gold-600">Enquire →</button>
+                        </div>
                     </div>
                     </div>
-                    {/* Card 3 */}
+
+                    {/* Card 3 - Placeholder */}
                     <div className="bg-white rounded-xl shadow-md overflow-hidden group hover:shadow-xl transition duration-300">
-                    <div className="h-48 bg-gray-200 relative overflow-hidden">
+                    <div className="h-56 bg-gray-200 relative overflow-hidden">
                         <img src="https://images.pexels.com/photos/259588/pexels-photo-259588.jpeg" alt="Lakefront Township" className="w-full h-full object-cover group-hover:scale-110 transition duration-700 grayscale group-hover:grayscale-0"/>
                         <div className="absolute inset-0 bg-black/40 flex items-center justify-center group-hover:bg-black/20 transition">
-                            <span className="bg-gold-600 text-white text-[10px] font-bold px-3 py-1 rounded uppercase tracking-wider">Coming Soon</span>
+                            <span className="bg-gray-800 text-white text-[10px] font-bold px-3 py-1 rounded uppercase tracking-wider">Coming Soon</span>
                         </div>
                     </div>
                     <div className="p-6">
                         <h3 className="font-bold text-brand-900 mb-1 text-lg">Lakefront Township</h3>
-                        <p className="text-xs text-gold-600 font-bold uppercase mb-2">Osman Sagar, Hyderabad</p>
-                        <p className="text-xs text-gray-500 mb-4 line-clamp-2">Resort-style living with serene lake views and lush greenery. 50+ acres of open space.</p>
-                        <button className="text-brand-900 text-xs font-bold underline decoration-gold-500 underline-offset-4 hover:text-gold-600">Enquire Now</button>
+                        <p className="text-xs text-gray-500 font-bold uppercase mb-3 flex items-center">
+                            <span className="w-1.5 h-1.5 bg-gray-400 rounded-full mr-2"></span>
+                            Osman Sagar, Hyderabad
+                        </p>
+                        <p className="text-xs text-gray-500 mb-4 line-clamp-2 leading-relaxed">Resort-style living with serene lake views and lush greenery. 50+ acres of open space.</p>
+                        <div className="flex items-center justify-between border-t border-gray-100 pt-4">
+                             <span className="text-gray-400 font-bold text-sm">Price on Request</span>
+                            <button className="text-brand-900 text-xs font-bold hover:text-gold-600">Enquire →</button>
+                        </div>
                     </div>
                     </div>
             </div>
         </div>
       </section>
 
-      {/* Safe Investment / Process Section - NEW */}
+      {/* Safe Investment / Process Section */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
