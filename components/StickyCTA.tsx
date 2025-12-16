@@ -19,7 +19,7 @@ export const StickyCTA: React.FC<StickyCTAProps> = ({ onEnquireClick }) => {
 
       {/* WhatsApp Button */}
       <a 
-        href="https://wa.me/919347334431?text=Hi,%20I%20am%20interested%20in%20Bollaar%20Properties." 
+        href="https://wa.me/918297196454?text=Hi,%20I%20am%20interested%20in%20Bollaar%20Properties." 
         className="flex flex-col items-center justify-center gap-0.5 bg-brand-900 text-gold-500 border-r border-gray-700 active:bg-brand-800 transition-colors"
       >
         <WhatsAppIcon className="w-3.5 h-3.5" />
@@ -28,7 +28,7 @@ export const StickyCTA: React.FC<StickyCTAProps> = ({ onEnquireClick }) => {
 
       {/* Call Button */}
       <a 
-        href="tel:+919347334431" 
+        href="tel:+918297196454" 
         className="flex flex-col items-center justify-center gap-0.5 bg-gradient-to-r from-gold-600 to-gold-500 text-white active:brightness-90 transition-all"
       >
         <PhoneIcon className="w-3.5 h-3.5" />

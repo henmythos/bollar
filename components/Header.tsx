@@ -37,11 +37,11 @@ export const Header: React.FC = () => {
             <a href="#contact" className="text-gray-700 hover:text-gold-600 font-medium transition text-xs lg:text-sm">Contact</a>
             
             <a 
-              href="tel:+919347334431" 
+              href="tel:+918297196454" 
               className="flex items-center gap-2 bg-brand-900 text-white px-4 py-2 rounded hover:bg-gold-600 transition duration-300 shadow-lg text-xs lg:text-sm"
             >
               <PhoneIcon className="w-3.5 h-3.5" />
-              <span>+91 93473 34431</span>
+              <span>+91 82971 96454</span>
             </a>
           </div>
 
@@ -81,10 +81,10 @@ export const Header: React.FC = () => {
               Godrej Regal Pavilion <span className="text-[10px] bg-gold-500 text-white px-1.5 py-0.5 rounded">New</span>
             </a>
             <a 
-              href="tel:+919347334431"
+              href="tel:+918297196454"
               className="block px-3 py-3 text-sm font-bold text-gold-600 bg-gray-50 rounded mt-4"
             >
-              Call: +91 93473 34431
+              Call: +91 82971 96454
             </a>
           </div>
         </div>

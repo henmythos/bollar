@@ -78,7 +78,7 @@ export const PrestigeCity: React.FC = () => {
           "longitude": "78.4346"
         },
         "url": "https://bollaarproperties.com/prestigecity",
-        "telephone": "+919347334431",
+        "telephone": "+918297196454",
         "priceRange": "₹ 1.50 Cr - ₹ 3.28 Cr"
       },
       {
@@ -184,10 +184,10 @@ export const PrestigeCity: React.FC = () => {
                 </div>
 
                 <div className="flex flex-col sm:flex-row gap-4 animate-fade-in-up" style={{ animationDelay: '500ms' }}>
-                    <a href="tel:+919347334431" className="bg-white text-brand-900 px-8 py-3.5 rounded-lg font-bold hover:bg-gray-100 transition shadow-lg text-center transform hover:-translate-y-1 text-sm">
+                    <a href="tel:+918297196454" className="bg-white text-brand-900 px-8 py-3.5 rounded-lg font-bold hover:bg-gray-100 transition shadow-lg text-center transform hover:-translate-y-1 text-sm">
                         Call Now
                     </a>
-                    <a href="https://wa.me/919347334431?text=Interested%20in%20Prestige%20City" className={`${goldGradient} text-white px-8 py-3.5 rounded-lg font-bold hover:brightness-110 transition flex items-center justify-center shadow-lg transform hover:-translate-y-1 border border-white/20 text-sm`}>
+                    <a href="https://wa.me/918297196454?text=Interested%20in%20Prestige%20City" className={`${goldGradient} text-white px-8 py-3.5 rounded-lg font-bold hover:brightness-110 transition flex items-center justify-center shadow-lg transform hover:-translate-y-1 border border-white/20 text-sm`}>
                         <WhatsAppIcon className="w-5 h-5 mr-2" /> WhatsApp
                     </a>
                 </div>
@@ -426,7 +426,7 @@ export const PrestigeCity: React.FC = () => {
             </div>
             
             <div className="mt-12 text-center">
-                 <a href="https://wa.me/919347334431?text=Send%20More%20Photos" className="inline-flex items-center bg-brand-900 text-white px-8 py-3.5 rounded-lg hover:bg-brand-800 transition font-bold shadow-lg transform hover:-translate-y-1 text-sm">
+                 <a href="https://wa.me/918297196454?text=Send%20More%20Photos" className="inline-flex items-center bg-brand-900 text-white px-8 py-3.5 rounded-lg hover:bg-brand-800 transition font-bold shadow-lg transform hover:-translate-y-1 text-sm">
                     <WhatsAppIcon className="w-4 h-4 mr-2" /> Request More Photos
                  </a>
             </div>
@@ -461,7 +461,7 @@ export const PrestigeCity: React.FC = () => {
                             referrerPolicy="no-referrer"
                         />
                         <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2">
-                            <a href="https://wa.me/919347334431?text=Share%20Location%20Map" className={`${goldGradient} text-white px-6 py-2 rounded-lg font-bold shadow-xl hover:brightness-110 transition text-sm flex items-center`}>
+                            <a href="https://wa.me/918297196454?text=Share%20Location%20Map" className={`${goldGradient} text-white px-6 py-2 rounded-lg font-bold shadow-xl hover:brightness-110 transition text-sm flex items-center`}>
                                 <WhatsAppIcon className="w-4 h-4 mr-2" /> Get Location
                             </a>
                         </div>
@@ -536,10 +536,10 @@ export const PrestigeCity: React.FC = () => {
                     <PhoneIcon className="w-8 h-8 text-brand-900 mr-4" />
                     <div className="text-left">
                         <div className="text-xs text-gray-500 uppercase tracking-wide">Call for offers</div>
-                        <a href="tel:+919347334431" className="font-bold text-2xl text-brand-900 hover:text-gold-600 transition">+91 93473 34431</a>
+                        <a href="tel:+918297196454" className="font-bold text-2xl text-brand-900 hover:text-gold-600 transition">+91 82971 96454</a>
                     </div>
                 </div>
-                <a href="https://wa.me/919347334431" className="bg-brand-900 text-white p-5 rounded-xl flex items-center justify-center min-w-[280px] font-bold hover:bg-brand-800 transition shadow-lg text-lg">
+                <a href="https://wa.me/918297196454" className="bg-brand-900 text-white p-5 rounded-xl flex items-center justify-center min-w-[280px] font-bold hover:bg-brand-800 transition shadow-lg text-lg">
                     <WhatsAppIcon className="w-8 h-8 mr-3" /> Chat on WhatsApp
                 </a>
             </div>

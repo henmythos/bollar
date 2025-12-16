@@ -9,7 +9,7 @@ export const GodrejRajendraNagar: React.FC = () => {
   const PROJECT_NAME = "Godrej Regal Pavilion";
 
   useEffect(() => {
-    document.title = "Godrej Regal Pavilion - Rajendra Nagar | Luxury 2, 3 & 4 BHK";
+    document.title = "Godrej Regal Pavilion - Rajendra Nagar | Luxury 3 & 4 BHK";
     window.scrollTo(0, 0);
 
     // Auto-trigger Lead Form Popup after 10 seconds
@@ -21,10 +21,11 @@ export const GodrejRajendraNagar: React.FC = () => {
   }, []);
 
   const prices: PriceRow[] = [
-    { unitType: "2 BHK", size: "1300 - 1400 Sq.Ft.", price: "₹ 1.10 Cr* Onwards" },
-    { unitType: "3 BHK", size: "1600 - 1800 Sq.Ft.", price: "₹ 1.44 Cr* Onwards" },
-    { unitType: "3.5 BHK", size: "1850 - 2350 Sq.Ft.", price: "₹ 2.01 Cr* Onwards" },
-    { unitType: "4 BHK", size: "2900 Sq.Ft.", price: "₹ 2.26 Cr* Onwards" },
+    { unitType: "3 BHK Premium", size: "1750 Sq.Ft.", price: "₹ 1.70 Cr* Onwards" },
+    { unitType: "3 BHK Luxe", size: "2050 Sq.Ft.", price: "₹ 1.90 Cr* Onwards" },
+    { unitType: "3.5 BHK", size: "2650 Sq.Ft.", price: "₹ 2.35 Cr* Onwards" },
+    { unitType: "4 BHK Premium", size: "2900 Sq.Ft.", price: "₹ 3.05 Cr* Onwards" },
+    { unitType: "4 BHK Luxe", size: "3500 Sq.Ft.", price: "₹ 3.20 Cr* Onwards" },
   ];
 
   const highlights = [
@@ -45,7 +46,7 @@ export const GodrejRajendraNagar: React.FC = () => {
   ];
 
   const heroImage = "https://www.godrejsregalpavilion.com/images/banner/banner/godrej-regal-pavilion-main-view_1400px.webp";
-  const partnerBadge = "https://i.postimg.cc/rpwdvKJy/sales-partner.jpg"; // Using same partner badge
+  const partnerBadge = "https://i.postimg.cc/CdyrVCSk/Whats-App-Image-2025-12-14-at-10-05-50-PM.jpg"; // Using same partner badge
   const projectLogo = "https://godrejregalpavilion.online/img/godrej%20footer.png";
 
   // SEO Schema
@@ -55,7 +56,7 @@ export const GodrejRajendraNagar: React.FC = () => {
       {
         "@type": "ApartmentComplex",
         "name": "Godrej Regal Pavilion",
-        "description": "Ultra-Luxury Royal Nawaab Themed Township in Rajendra Nagar. 13 Acres, 9 Towers, offering 2, 3, 3.5 & 4 BHK Apartments.",
+        "description": "Ultra-Luxury Royal Nawaab Themed Township in Rajendra Nagar. 13 Acres, 9 Towers, offering 3, 3.5 & 4 BHK Apartments.",
         "image": "https://www.godrejsregalpavilion.com/images/banner/banner/godrej-regal-pavilion-main-view_1400px.webp",
         "address": {
           "@type": "PostalAddress",
@@ -71,8 +72,8 @@ export const GodrejRajendraNagar: React.FC = () => {
           "longitude": "78.4000"
         },
         "url": "https://bollaarproperties.com/godrej-rajendranagar",
-        "telephone": "+919347334431",
-        "priceRange": "₹ 1.10 Cr - ₹ 2.26 Cr"
+        "telephone": "+918297196454",
+        "priceRange": "₹ 1.70 Cr - ₹ 3.20 Cr"
       },
       {
         "@type": "FAQPage",
@@ -163,10 +164,10 @@ export const GodrejRajendraNagar: React.FC = () => {
                 {/* Highlights */}
                 <div className="space-y-3 mb-8 bg-black/40 p-5 rounded-lg backdrop-blur-md border-l-4 border-gold-500 inline-block w-full md:w-auto animate-fade-in-up" style={{ animationDelay: '400ms' }}>
                     <p className="flex items-center text-sm md:text-base">
-                        <CheckIcon className="w-5 h-5 text-gold-500 mr-2 flex-shrink-0" /> Premium 2, 3, 3.5 & 4 BHK
+                        <CheckIcon className="w-5 h-5 text-gold-500 mr-2 flex-shrink-0" /> Premium 3, 3.5 & 4 BHK
                     </p>
                     <p className="flex items-center text-sm md:text-base">
-                        <CheckIcon className="w-5 h-5 text-gold-500 mr-2 flex-shrink-0" /> Starting from ₹ 1.10 Cr*
+                        <CheckIcon className="w-5 h-5 text-gold-500 mr-2 flex-shrink-0" /> Starting from ₹ 1.70 Cr*
                     </p>
                     <p className="flex items-center text-sm md:text-base">
                         <BuildingIcon className="w-5 h-5 text-gold-500 mr-2 flex-shrink-0" /> 13 Acres | 9 Towers | G+33 Floors
@@ -177,10 +178,10 @@ export const GodrejRajendraNagar: React.FC = () => {
                 </div>
 
                 <div className="flex flex-col sm:flex-row gap-4 animate-fade-in-up" style={{ animationDelay: '500ms' }}>
-                    <a href="tel:+919347334431" className="bg-white text-brand-900 px-8 py-3.5 rounded-lg font-bold hover:bg-gray-100 transition shadow-lg text-center transform hover:-translate-y-1 text-sm">
+                    <a href="tel:+918297196454" className="bg-white text-brand-900 px-8 py-3.5 rounded-lg font-bold hover:bg-gray-100 transition shadow-lg text-center transform hover:-translate-y-1 text-sm">
                         Call Now
                     </a>
-                    <a href="https://wa.me/919347334431?text=Interested%20in%20Godrej%20Regal%20Pavilion" className={`${goldGradient} text-white px-8 py-3.5 rounded-lg font-bold hover:brightness-110 transition flex items-center justify-center shadow-lg transform hover:-translate-y-1 border border-white/20 text-sm`}>
+                    <a href="https://wa.me/918297196454?text=Interested%20in%20Godrej%20Regal%20Pavilion" className={`${goldGradient} text-white px-8 py-3.5 rounded-lg font-bold hover:brightness-110 transition flex items-center justify-center shadow-lg transform hover:-translate-y-1 border border-white/20 text-sm`}>
                         <WhatsAppIcon className="w-5 h-5 mr-2" /> WhatsApp
                     </a>
                 </div>
@@ -204,7 +205,7 @@ export const GodrejRajendraNagar: React.FC = () => {
                         Godrej Regal Pavilion is a futuristic, cutting-edge apartment project by Godrej Properties, located in Gaganpahad, Rajendra Nagar, Hyderabad. Spanning 13 acres of land, it offers a total of 2,000 premium Vaastu-compliant units.
                     </p>
                     <p className="text-gray-600 mb-6 leading-relaxed text-sm">
-                        The project is designed with a <strong>Royal Nawaab Theme</strong>, offering luxury high-rise apartments in 2, 3, 3.5, and 4 BHK layouts. It consists of 6 to 9 high-rise towers, each with 4 Basements + Ground + 33 Floors.
+                        The project is designed with a <strong>Royal Nawaab Theme</strong>, offering luxury high-rise apartments in 3, 3.5, and 4 BHK layouts. It consists of 6 to 9 high-rise towers, each with 4 Basements + Ground + 33 Floors.
                     </p>
                     <p className="text-gray-600 mb-8 leading-relaxed text-sm">
                          With 80% open spaces and a green, well-ventilated ecosystem, it features a massive clubhouse of 75,000 sq. ft. (G+5 floors) including a café, spa, gym, swimming pool, and kids’ play zone.
@@ -273,25 +274,25 @@ export const GodrejRajendraNagar: React.FC = () => {
                 <div className={`h-1 w-24 mx-auto ${goldGradient} mt-4 rounded-full`}></div>
             </div>
 
-            <div className="flex overflow-x-auto snap-x snap-mandatory gap-6 pb-8 md:grid md:grid-cols-4 md:gap-6 md:overflow-visible px-4 -mx-4 md:mx-0 scrollbar-hide">
+            <div className="flex overflow-x-auto snap-x snap-mandatory gap-6 pb-8 md:grid md:grid-cols-5 md:gap-4 md:overflow-visible px-4 -mx-4 md:mx-0 scrollbar-hide">
                 {prices.map((row, idx) => (
                     <div key={idx} className="snap-center shrink-0 w-[80%] md:w-auto relative group">
                         <div className={`p-[1px] rounded-2xl ${goldGradient} shadow-2xl h-full transform transition duration-300 md:group-hover:-translate-y-2`}>
                             <div className="bg-brand-900 rounded-2xl p-6 h-full flex flex-col relative overflow-hidden">
                                 <div className="mb-6">
-                                    <h3 className="text-2xl font-serif font-bold text-white mb-2">{row.unitType}</h3>
-                                    <div className="inline-block px-3 py-1 bg-white/10 rounded-full text-xs font-semibold tracking-wider text-gold-400 border border-white/10">
+                                    <h3 className="text-xl font-serif font-bold text-white mb-2">{row.unitType}</h3>
+                                    <div className="inline-block px-3 py-1 bg-white/10 rounded-full text-[10px] font-semibold tracking-wider text-gold-400 border border-white/10">
                                         LUXURY
                                     </div>
                                 </div>
                                 <div className="space-y-6 flex-grow">
                                     <div>
-                                        <p className="text-gray-400 text-xs uppercase tracking-widest mb-1">Super Built-up Area</p>
-                                        <p className="text-lg font-medium text-white">{row.size}</p>
+                                        <p className="text-gray-400 text-[10px] uppercase tracking-widest mb-1">Super Built-up Area</p>
+                                        <p className="text-base font-medium text-white">{row.size}</p>
                                     </div>
                                     <div className="pt-6 border-t border-gray-800">
-                                        <p className="text-gray-400 text-xs uppercase tracking-widest mb-1">Starting Price</p>
-                                        <p className={`text-xl font-bold ${goldTextGradient}`}>
+                                        <p className="text-gray-400 text-[10px] uppercase tracking-widest mb-1">Starting Price</p>
+                                        <p className={`text-lg font-bold ${goldTextGradient}`}>
                                             {row.price}
                                         </p>
                                     </div>
@@ -368,7 +369,7 @@ export const GodrejRajendraNagar: React.FC = () => {
                         referrerPolicy="no-referrer-when-downgrade"
                     ></iframe>
                      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2">
-                            <a href="https://wa.me/919347334431?text=Share%20Godrej%20Location" className={`${goldGradient} text-white px-6 py-2 rounded-lg font-bold shadow-xl hover:brightness-110 transition text-sm flex items-center whitespace-nowrap`}>
+                            <a href="https://wa.me/918297196454?text=Share%20Godrej%20Location" className={`${goldGradient} text-white px-6 py-2 rounded-lg font-bold shadow-xl hover:brightness-110 transition text-sm flex items-center whitespace-nowrap`}>
                                 <WhatsAppIcon className="w-4 h-4 mr-2" /> Get Exact Location
                             </a>
                     </div>
@@ -400,10 +401,10 @@ export const GodrejRajendraNagar: React.FC = () => {
                     <PhoneIcon className="w-8 h-8 text-brand-900 mr-4" />
                     <div className="text-left">
                         <div className="text-xs text-gray-500 uppercase tracking-wide">Call for offers</div>
-                        <a href="tel:+919347334431" className="font-bold text-2xl text-brand-900 hover:text-gold-600 transition">+91 93473 34431</a>
+                        <a href="tel:+918297196454" className="font-bold text-2xl text-brand-900 hover:text-gold-600 transition">+91 82971 96454</a>
                     </div>
                 </div>
-                <a href="https://wa.me/919347334431?text=Interested%20in%20Godrej%20Regal%20Pavilion" className="bg-brand-900 text-white p-5 rounded-xl flex items-center justify-center min-w-[280px] font-bold hover:bg-brand-800 transition shadow-lg text-lg">
+                <a href="https://wa.me/918297196454?text=Interested%20in%20Godrej%20Regal%20Pavilion" className="bg-brand-900 text-white p-5 rounded-xl flex items-center justify-center min-w-[280px] font-bold hover:bg-brand-800 transition shadow-lg text-lg">
                     <WhatsAppIcon className="w-8 h-8 mr-3" /> Chat on WhatsApp
                 </a>
             </div>

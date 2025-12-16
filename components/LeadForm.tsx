@@ -48,7 +48,7 @@ export const LeadForm: React.FC<LeadFormProps> = ({
         if (brochureUrl) {
             window.open(brochureUrl, '_blank');
         } else {
-            window.location.href = `https://wa.me/919347334431?text=Hi,%20I%20am%20${formData.name}.%20I%20just%20filled%20the%20form%20for%20${project}.`;
+            window.location.href = `https://wa.me/918297196454?text=Hi,%20I%20am%20${formData.name}.%20I%20just%20filled%20the%20form%20for%20${project}.`;
         }
     }, 1500);
   };

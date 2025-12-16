@@ -15,7 +15,7 @@ export const Home: React.FC = () => {
     "image": "https://i.postimg.cc/rpwdvKJy/sales-partner.jpg",
     "description": "Hyderabad's Most Trusted Real Estate Advisory & Prestige City Authorized Partner. Guiding families to their dream homes.",
     "url": "https://bollaarproperties.com",
-    "telephone": "+919347334431",
+    "telephone": "+918297196454",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Hyderabad",
@@ -79,10 +79,10 @@ export const Home: React.FC = () => {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="tel:+919347334431" className="flex items-center justify-center gap-2 bg-gold-600 hover:bg-gold-500 text-white px-8 py-4 rounded-lg font-bold transition shadow-lg text-lg transform hover:-translate-y-1">
+                <a href="tel:+918297196454" className="flex items-center justify-center gap-2 bg-gold-600 hover:bg-gold-500 text-white px-8 py-4 rounded-lg font-bold transition shadow-lg text-lg transform hover:-translate-y-1">
                     <PhoneIcon className="w-5 h-5" /> Call Now
                 </a>
-                <a href="https://wa.me/919347334431" className="flex items-center justify-center gap-2 bg-brand-900 hover:bg-brand-800 border border-gold-500/30 text-white px-8 py-4 rounded-lg font-bold transition shadow-lg text-lg transform hover:-translate-y-1">
+                <a href="https://wa.me/918297196454" className="flex items-center justify-center gap-2 bg-brand-900 hover:bg-brand-800 border border-gold-500/30 text-white px-8 py-4 rounded-lg font-bold transition shadow-lg text-lg transform hover:-translate-y-1">
                     <WhatsAppIcon className="w-5 h-5" /> WhatsApp Chat
                 </a>
             </div>
@@ -133,7 +133,7 @@ export const Home: React.FC = () => {
                         <a href="#/prestigecity" className="inline-flex justify-center items-center px-6 py-3.5 border border-transparent text-sm font-bold rounded-lg text-white bg-brand-900 hover:bg-brand-800 transition shadow-lg">
                             View Project Details
                         </a>
-                        <a href="https://wa.me/919347334431?text=Please%20send%20brochure%20for%20Prestige%20City" className="inline-flex justify-center items-center px-6 py-3.5 border border-gray-300 text-sm font-bold rounded-lg text-brand-900 bg-white hover:bg-gray-50 transition shadow-sm">
+                        <a href="https://wa.me/918297196454?text=Please%20send%20brochure%20for%20Prestige%20City" className="inline-flex justify-center items-center px-6 py-3.5 border border-gray-300 text-sm font-bold rounded-lg text-brand-900 bg-white hover:bg-gray-50 transition shadow-sm">
                            <DocIcon className="w-4 h-4 mr-2" /> Download Brochure
                         </a>
                     </div>
@@ -284,7 +284,7 @@ export const Home: React.FC = () => {
             <p className="text-gray-300 text-sm leading-relaxed mb-8">
                 Investing in gated communities by reputed builders like Prestige Group ensures not just a luxury lifestyle but also a secure asset for generations. Bollaar Properties helps you navigate this dynamic market with expert advice and data-driven insights.
             </p>
-            <a href="tel:+919347334431" className="inline-block border border-gold-500 text-gold-500 hover:bg-gold-500 hover:text-white px-6 py-2 rounded transition text-sm font-bold uppercase tracking-wider">
+            <a href="tel:+918297196454" className="inline-block border border-gold-500 text-gold-500 hover:bg-gold-500 hover:text-white px-6 py-2 rounded transition text-sm font-bold uppercase tracking-wider">
                 Talk to an Investment Expert
             </a>
         </div>
@@ -351,10 +351,10 @@ export const Home: React.FC = () => {
         <div className="max-w-4xl mx-auto px-4 text-center">
             <h2 className="text-xl md:text-2xl font-serif font-bold text-white mb-6">Ready to find your dream home?</h2>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="tel:+919347334431" className="bg-white text-brand-900 px-8 py-3.5 rounded-lg font-bold hover:bg-gray-100 transition shadow-lg text-lg transform hover:-translate-y-1">
+                <a href="tel:+918297196454" className="bg-white text-brand-900 px-8 py-3.5 rounded-lg font-bold hover:bg-gray-100 transition shadow-lg text-lg transform hover:-translate-y-1">
                     Schedule a Site Visit
                 </a>
-                <a href="https://wa.me/919347334431" className="bg-brand-900 text-white px-8 py-3.5 rounded-lg font-bold hover:bg-brand-800 transition shadow-lg text-lg transform hover:-translate-y-1">
+                <a href="https://wa.me/918297196454" className="bg-brand-900 text-white px-8 py-3.5 rounded-lg font-bold hover:bg-brand-800 transition shadow-lg text-lg transform hover:-translate-y-1">
                     WhatsApp for Offers
                 </a>
             </div>

@@ -15,16 +15,6 @@ export const Footer: React.FC = () => {
             <p className="text-xs font-semibold text-gold-500 mb-4">
               RERA Authorized: A02400003455
             </p>
-            
-            {/* Sales Partner Badge */}
-            <div className="p-[2px] bg-gradient-to-r from-gold-600 via-[#E5C565] to-gold-600 rounded-lg inline-block shadow-lg">
-                <img 
-                    src="https://i.postimg.cc/rpwdvKJy/sales-partner.jpg" 
-                    alt="Authorized Sales Partner" 
-                    className="h-12 w-auto block rounded-md bg-white object-contain"
-                    referrerPolicy="no-referrer"
-                />
-            </div>
           </div>
 
           {/* Quick Links */}
@@ -45,7 +35,7 @@ export const Footer: React.FC = () => {
             <h4 className="text-white font-bold mb-4 uppercase tracking-wider text-xs">Contact Us</h4>
             <div className="space-y-2 text-sm">
               <p className="text-xs text-gray-400">Authorized Sales Partner</p>
-              <p className="text-white font-bold text-base">+91 93473 34431</p>
+              <p className="text-white font-bold text-base">+91 82971 96454</p>
               <p className="text-xs text-gray-400">Hyderabad, Telangana, India</p>
             </div>
           </div>
